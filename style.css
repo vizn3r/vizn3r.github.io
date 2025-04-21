@@ -101,7 +101,6 @@ th {
 td,
 th {
   padding: 6px 13px;
-  border: 1px solid #30363d;
 }
 
 tr {
@@ -115,7 +114,6 @@ tr:nth-child(even) {
 
 img {
   max-width: 100%;
-  box-sizing: content-box;
   border: none
 }
 
