@@ -1,0 +1,315 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html {
+    background: linear-gradient(135deg, #1a1a1a 0%, #0a0a0a 100%);
+    background-color: #9f00ff;
+}
+
+body {
+    color: white;
+    min-height: 100vh;
+    height: 100%;
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 4px;
+    background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(159, 0, 255, 0.4);
+    border-radius: 0px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: #9f00ff;
+}
+
+.container {
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem;
+    text-align: center;
+    min-height: 100vh;
+    position: relative;
+
+    height: 100vh;
+    overflow-y: auto;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+}
+
+.logo {
+    font-size: 5rem;
+    font-weight: 700;
+    color: #9f00ff;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin: 4rem 0;
+    text-shadow: 0 0 15px rgba(159, 0, 255, 0.4);
+    animation: float 3s ease-in-out infinite;
+}
+
+
+.launch-text {
+    color: white;
+    font-size: 7rem;
+    display: block;
+    line-height: 1.2;
+    margin: 2rem 0;
+    background: linear-gradient(45deg, #9f00ff, white);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.content {
+    margin: 2rem 0;
+    width: 80%;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+    text-shadow: 0 0 20px rgba(159, 0, 255, 0.4),
+                 0 0 30px rgba(159, 0, 255, 0.2);
+}
+
+.highlight {
+    color: #9f00ff;
+}
+
+.countdown {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 3rem 0;
+    flex-wrap: wrap;
+}
+
+.countdown-item {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    border-radius: 10px;
+    min-width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.countdown-item:hover {
+    transform: translateY(-10px);
+    background: rgba(159, 0, 255, 0.05);
+}
+
+.countdown-number {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #9f00ff;
+    text-shadow: 0 0 15px rgba(159, 0, 255, 0.3);
+}
+
+.countdown-label {
+    font-size: 0.9rem;
+    color: #ccc;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.notify-form {
+    margin: 3rem 0;
+}
+
+input[type="email"] {
+    padding: 1rem 1.5rem;
+    border: 2px solid #9f00ff;
+    border-radius: 50px;
+    background: transparent;
+    color: white;
+    width: 300px;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.notify-button {
+    padding: 1rem 2rem;
+    background: #9f00ff;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.notify-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(159, 0, 255, 0.3);
+}
+
+.social-links {
+    margin-top: 3rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    margin: 0 1rem;
+    transition: 0.3s;
+}
+
+.social-links a:hover {
+    color: #9f00ff;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.feature-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 2rem;
+    border-radius: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border: 1px solid rgba(159, 0, 255, 0.1);
+}
+
+.feature-card:hover {
+    transform: translateY(-10px);
+    background: rgba(159, 0, 255, 0.05);
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: #9f00ff;
+    margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+    color: #9f00ff;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.feature-card p {
+    color: #ccc;
+    font-size: 0.9rem;
+    line-height: 1.5;
+}
+
+footer {
+    text-align: center;
+    margin-top: auto;
+    padding: 3rem 0 2rem;
+}
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #9f00ff !important;
+}
+
+.social-links i {
+    font-size: 1.4rem;
+    margin: 0 0.8rem;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover i {
+    transform: translateY(-3px);
+}
+
+/* Bluesky icon customization */
+.fa-square {
+    position: relative;
+    color: #9f00ff !important;
+}
+
+.fa-square::after {
+    content: "BS";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.6rem;
+    font-weight: 700;
+    color: white;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+@keyframes glow-pulse {
+    0% { text-shadow: 0 0 15px rgba(159, 0, 255, 0.3); }
+    50% { text-shadow: 0 0 25px rgba(159, 0, 255, 0.5); }
+    100% { text-shadow: 0 0 15px rgba(159, 0, 255, 0.3); }
+}
+
+@media (max-width: 768px) {
+    .logo {
+        font-size: 2rem;
+    }
+
+    .launch-text {
+        font-size: 2.5rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .countdown-item {
+        padding: 1rem;
+        min-width: 90px;
+    }
+
+    .countdown-number {
+        font-size: 2rem;
+    }
+
+    .features-grid {
+        grid-template-columns: 1fr;
+        padding: 0 1rem;
+    }
+
+    .feature-card {
+        padding: 1.5rem;
+    }
+
+    .social-links {
+        margin-bottom: 1rem;
+    }
+
+    .social-links a {
+        margin: 0 0.5rem;
+    }
+
+    footer div {
+        margin-bottom: 0.8rem;
+    }
+
+}
