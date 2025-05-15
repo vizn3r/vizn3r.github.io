@@ -21,11 +21,14 @@ body {
 
 #readme-body {
   width: 100%;
-  background-color: #010409;
   padding: 2rem;
   border-radius: 6px;
   border: 1px solid #30363d;
   max-width: 960px;
+
+  backdrop-filter: blur(10px);
+  position: relative;
+  z-index: 1;
 }
 
 #loading-text {
@@ -159,4 +162,28 @@ strong {
 em {
   font-style: italic;
   color: #8b949e;
+}
+
+.emoji-background {
+    position: fixed;
+    top: -5vh;
+    left: 0;
+    width: 100vw;
+    height: 105vh;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+}
+
+.emoji-background div {
+    position: absolute;
+    font-size: 24px;
+    opacity: 0.3;
+    animation: emoji-float linear infinite;
+    filter: drop-shadow(0 0 5px rgba(159, 0, 255, 0.5));
+}
+
+@keyframes emoji-float {
+    from { transform: translateY(110vh) rotate(0deg) scale(0.8); opacity: 1; }
+    to { transform: translateY(-30vh) rotate(360deg) scale(1.2); opacity: 0; }
 }
